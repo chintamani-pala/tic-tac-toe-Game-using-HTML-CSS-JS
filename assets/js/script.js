@@ -71,6 +71,10 @@ Array.from(box).forEach(ele => {
 
 let reset = document.getElementById("reset")
 reset.addEventListener("click", () => {
+    successSound.currentTime=0;
+    successSound.pause();
+    failSound.currentTime=0;
+    failSound.pause();
     over = false
     turn = "X"
     let boxitem = document.getElementsByClassName('boxitem')
