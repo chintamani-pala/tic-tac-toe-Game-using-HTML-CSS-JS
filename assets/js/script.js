@@ -9,10 +9,6 @@ function changeTurn() {
     turn = turn === "X" ? "O" : "X"
 }
 
-
-
-
-
 function checkWin() {
 
     let winPossibility = [
